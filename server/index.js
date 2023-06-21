@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect("mongodb+srv://Subhadip:Subhadip@cluster0.nqmgaya.mongodb.net/chat-app", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
